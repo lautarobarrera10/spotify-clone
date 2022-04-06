@@ -59,7 +59,7 @@ body {
 
 .splash img {
     width: 160px;
-    height: fit-content;
+    height: 160px;
 }
 
 @keyframes fadeIn {
