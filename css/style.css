@@ -1,6 +1,7 @@
 :root {
     --gris-mate: #373737;
     --secondary-font: #B1B1B1;
+    --terciary-font: #E4E4E4
 }
 
 /* --- BODY --- */
@@ -27,6 +28,13 @@ body {
     margin: 0;
     font-size: 1.1em;
     color: var(--secondary-font);
+}
+
+.terciary-text {
+    margin: 4px 0 0 0;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--terciary-font);
 }
 
 
@@ -123,22 +131,22 @@ header .buttons-container span{
 }
 
 /* --- NOVEDADES POPULARES --- */
-.popular-news {
+.popular-news, .popular-artists {
     width: 100%;
     margin: 32px 0 0 10%;
 }
 
-.popular-news h2 {
+.popular-news h2, .popular-artists h2 {
     margin: 0 0 16px 0;
     font-size: 2.4em;
 }
 
-.new-container {
+.new-container, .artists-container {
     display: flex;
     overflow-x: scroll;
 }
 
-.new-container::-webkit-scrollbar {
+.new-container::-webkit-scrollbar, .artists-container::-webkit-scrollbar {
     display: none;
 }
 
@@ -150,4 +158,14 @@ header .buttons-container span{
 .new img {
     margin-bottom: 4px;
     width: 120px;
+}
+
+/* --- ARTISTAS POPULARES --- */
+.artist {
+    margin-right: 12px;
+}
+
+.artist img {
+    width: 120px;
+    border-radius: 100%;
 }
