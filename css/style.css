@@ -1,6 +1,13 @@
 body {
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    font-size: 62.5%;
+    color: white;
+    background: linear-gradient(170deg, rgba(5,10,52,1) 0%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%);
 }
 
 
@@ -38,3 +45,27 @@ body {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
 }
+
+/* --- HERO --- */
+.hero {
+    padding: 0 20px;
+    min-width: 320px;
+    max-width: 370px;
+}
+
+/* --- HEADER --- */
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header .buttons-container span{
+    margin-left: 16px;
+}
+
