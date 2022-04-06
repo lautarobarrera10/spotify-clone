@@ -1,5 +1,6 @@
 :root {
     --gris-mate: #373737;
+    --secondary-font: #B1B1B1;
 }
 
 /* --- BODY --- */
@@ -7,12 +8,25 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
-    display: grid;
-    justify-items: center;
     font-size: 62.5%;
     color: white;
     background: linear-gradient(170deg, rgba(5,10,52,1) 0%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%);
+}
+
+/* --- TEXTOS --- */
+.primary-text {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.secondary-text {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--secondary-font);
 }
 
 
@@ -53,14 +67,18 @@ body {
 
 /* --- HERO --- */
 .hero {
-    padding: 0 20px;
     min-width: 320px;
     max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* --- HEADER --- */
 header {
     margin-top: 60px;
+    width: 90%;
+    max-width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,6 +94,8 @@ header .buttons-container span{
 
 /* --- ESCUCHADO RECIENTEMENTE --- */
 .recent {
+    width: 90%;
+    max-width: 320px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -83,7 +103,7 @@ header .buttons-container span{
 }
 
 .recent .playlist {
-    width: 156px;
+    max-width: 156px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -100,4 +120,34 @@ header .buttons-container span{
 .recent .playlist p {
     margin: 0 8px;
     font-size: 1.2em;
+}
+
+/* --- NOVEDADES POPULARES --- */
+.popular-news {
+    width: 100%;
+    margin: 32px 0 0 10%;
+}
+
+.popular-news h2 {
+    margin: 0 0 16px 0;
+    font-size: 2.4em;
+}
+
+.new-container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.new-container::-webkit-scrollbar {
+    display: none;
+}
+
+.new {
+    margin-right: 12px;
+    width: 120px;
+}
+
+.new img {
+    margin-bottom: 4px;
+    width: 120px;
 }
