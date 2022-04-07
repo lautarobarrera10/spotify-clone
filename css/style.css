@@ -75,7 +75,7 @@ body {
 
 /* --- HERO --- */
 .hero {
-    margin: 60px 0;
+    margin: 40px 0 60px;
     min-width: 320px;
     max-width: 370px;
     display: flex;
@@ -132,8 +132,8 @@ header .buttons-container span{
 
 /* --- NOVEDADES POPULARES --- */
 .popular-news, .popular-artists {
-    width: 100%;
-    margin: 32px 0 0 10%;
+    width: 90%;
+    margin: 32px 0 0 0;
 }
 
 .popular-news h2, .popular-artists h2 {
